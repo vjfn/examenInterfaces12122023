@@ -20,7 +20,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.exameninterfaces18122023.ParkingController">
+<BorderPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.exameninterfaces18122023.ParkingController">
    <center>
         <VBox alignment="TOP_CENTER" spacing="10">
             <children>
@@ -108,14 +108,14 @@
                                     <Label text="Entrada" textFill="WHITE" GridPane.rowIndex="4" />
                                     <Label text="Salida" textFill="WHITE" GridPane.rowIndex="5" />
                                     <Label text="Coste" textFill="WHITE" GridPane.rowIndex="6" />
-                                    <Label text="XXX €" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                    <Label fx:id="lblCoste" text="XXX €" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="6" />
                                  </children>
                                  <padding>
                                     <Insets left="5.0" />
                                  </padding>
                               </GridPane>
                                       <Button fx:id="btnAgregar" text="Añadir a la tabla" />
-                                      <Button fx:id="btnSalir" text="Salir de la aplicación" />
+                                      <Button fx:id="btnSalir" onAction="#salir" text="Salir de la aplicación" />
                                   </children>
                            <HBox.margin>
                               <Insets />
@@ -142,7 +142,7 @@
                   <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                </padding>
             </BorderPane>
-                <Label fx:id="lblFooter" style="-: 14px;" text="Aplicación creada por Víctor Jesús Fernández Noguer" textFill="#00c3ff" />
+                <Label fx:id="lblFooter" style=": 14px;" text="Aplicación creada por Víctor Jesús Fernández Noguer" textFill="#00c3ff" />
             </children>
         </VBox>
    </center>
